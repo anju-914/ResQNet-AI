@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --panel: rgba(10, 10, 10, 0.85);
+  --card: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.12);
+  --gold: #a78b71;
+  --gold-light: #c9b8a0;
+  --gold-hover: #e8d5b7;
+}
+
+body {
+  background-color: var(--bg);
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Aurum dot grid pattern for queue and non-map screens */
+.bg-dot-grid {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+
+/* Glass panel floating over map */
+.glass-panel {
+  background: var(--panel);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
+}
+
+/* Gold glow selection */
+.gold-glow {
+  box-shadow: 0 0 15px rgba(167, 139, 113, 0.25);
+  border-color: var(--gold);
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(10, 10, 10, 0.5);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}
+
+/* Tabular figures for counters */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
