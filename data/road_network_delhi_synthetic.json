@@ -1,0 +1,195 @@
+{
+  "nodes": {
+    "N_KASHMERE_GATE": {"lat": 28.6670, "lon": 77.2280, "name": "Kashmere Gate ISBT"},
+    "N_CIVIL_LINES": {"lat": 28.6810, "lon": 77.2220, "name": "Civil Lines"},
+    "N_SHASTRI_PARK": {"lat": 28.6720, "lon": 77.2580, "name": "Shastri Park Metro"},
+    "N_YAMUNA_BAZAAR": {"lat": 28.6560, "lon": 77.2380, "name": "Yamuna Bazaar Ghat"},
+    "N_YAMUNA_KHADAR": {"lat": 28.6430, "lon": 77.2620, "name": "Yamuna Khadar Lowland"},
+    "N_ITO_JUNCTION": {"lat": 28.6290, "lon": 77.2420, "name": "ITO Ring Road"},
+    "N_LAXMI_NAGAR": {"lat": 28.6310, "lon": 77.2770, "name": "Laxmi Nagar Vikas Marg"},
+    "N_MAYUR_VIHAR": {"lat": 28.6080, "lon": 77.2960, "name": "Mayur Vihar Phase 1"},
+    "N_AKSHARDHAM": {"lat": 28.6180, "lon": 77.2780, "name": "Akshardham Flyover"},
+    "N_SARITA_VIHAR": {"lat": 28.5280, "lon": 77.2980, "name": "Sarita Vihar"},
+    "N_OKHLA_BARRAGE": {"lat": 28.5350, "lon": 77.2730, "name": "Okhla Barrage"},
+    "N_SECTOR_62": {"lat": 28.6280, "lon": 77.3640, "name": "Noida Sector 62 Hub"},
+    "N_SECTOR_5": {"lat": 28.6010, "lon": 77.3750, "name": "Sector 5 Relief Center"}
+  },
+  "edges": [
+    {
+      "id": "E_CIVIL_TO_KASHMERE",
+      "from": "N_CIVIL_LINES",
+      "to": "N_KASHMERE_GATE",
+      "base_weight": 2.1,
+      "coords": [[77.2220, 28.6810], [77.2250, 28.6740], [77.2280, 28.6670]]
+    },
+    {
+      "id": "E_KASHMERE_TO_CIVIL",
+      "from": "N_KASHMERE_GATE",
+      "to": "N_CIVIL_LINES",
+      "base_weight": 2.1,
+      "coords": [[77.2280, 28.6670], [77.2250, 28.6740], [77.2220, 28.6810]]
+    },
+    {
+      "id": "E_KASHMERE_TO_SHASTRI",
+      "from": "N_KASHMERE_GATE",
+      "to": "N_SHASTRI_PARK",
+      "base_weight": 3.4,
+      "coords": [[77.2280, 28.6670], [77.2430, 28.6700], [77.2580, 28.6720]]
+    },
+    {
+      "id": "E_SHASTRI_TO_KASHMERE",
+      "from": "N_SHASTRI_PARK",
+      "to": "N_KASHMERE_GATE",
+      "base_weight": 3.4,
+      "coords": [[77.2580, 28.6720], [77.2430, 28.6700], [77.2280, 28.6670]]
+    },
+    {
+      "id": "E_KASHMERE_TO_YAMUNA_BAZAAR",
+      "from": "N_KASHMERE_GATE",
+      "to": "N_YAMUNA_BAZAAR",
+      "base_weight": 1.6,
+      "coords": [[77.2280, 28.6670], [77.2330, 28.6610], [77.2380, 28.6560]]
+    },
+    {
+      "id": "E_YAMUNA_BAZAAR_TO_KASHMERE",
+      "from": "N_YAMUNA_BAZAAR",
+      "to": "N_KASHMERE_GATE",
+      "base_weight": 1.6,
+      "coords": [[77.2380, 28.6560], [77.2330, 28.6610], [77.2280, 28.6670]]
+    },
+    {
+      "id": "E_YAMUNA_BAZAAR_TO_KHADAR",
+      "from": "N_YAMUNA_BAZAAR",
+      "to": "N_YAMUNA_KHADAR",
+      "base_weight": 2.8,
+      "coords": [[77.2380, 28.6560], [77.2500, 28.6490], [77.2620, 28.6430]]
+    },
+    {
+      "id": "E_KHADAR_TO_YAMUNA_BAZAAR",
+      "from": "N_YAMUNA_KHADAR",
+      "to": "N_YAMUNA_BAZAAR",
+      "base_weight": 2.8,
+      "coords": [[77.2620, 28.6430], [77.2500, 28.6490], [77.2380, 28.6560]]
+    },
+    {
+      "id": "E_YAMUNA_BAZAAR_TO_ITO",
+      "from": "N_YAMUNA_BAZAAR",
+      "to": "N_ITO_JUNCTION",
+      "base_weight": 3.1,
+      "coords": [[77.2380, 28.6560], [77.2400, 28.6420], [77.2420, 28.6290]]
+    },
+    {
+      "id": "E_ITO_TO_YAMUNA_BAZAAR",
+      "from": "N_ITO_JUNCTION",
+      "to": "N_YAMUNA_BAZAAR",
+      "base_weight": 3.1,
+      "coords": [[77.2420, 28.6290], [77.2400, 28.6420], [77.2380, 28.6560]]
+    },
+    {
+      "id": "E_ITO_TO_LAXMI_NAGAR",
+      "from": "N_ITO_JUNCTION",
+      "to": "N_LAXMI_NAGAR",
+      "base_weight": 3.8,
+      "coords": [[77.2420, 28.6290], [77.2600, 28.6300], [77.2770, 28.6310]]
+    },
+    {
+      "id": "E_LAXMI_NAGAR_TO_ITO",
+      "from": "N_LAXMI_NAGAR",
+      "to": "N_ITO_JUNCTION",
+      "base_weight": 3.8,
+      "coords": [[77.2770, 28.6310], [77.2600, 28.6300], [77.2420, 28.6290]]
+    },
+    {
+      "id": "E_LAXMI_TO_AKSHARDHAM",
+      "from": "N_LAXMI_NAGAR",
+      "to": "N_AKSHARDHAM",
+      "base_weight": 2.2,
+      "coords": [[77.2770, 28.6310], [77.2780, 28.6240], [77.2780, 28.6180]]
+    },
+    {
+      "id": "E_AKSHARDHAM_TO_LAXMI",
+      "from": "N_AKSHARDHAM",
+      "to": "N_LAXMI_NAGAR",
+      "base_weight": 2.2,
+      "coords": [[77.2780, 28.6180], [77.2780, 28.6240], [77.2770, 28.6310]]
+    },
+    {
+      "id": "E_AKSHARDHAM_TO_MAYUR",
+      "from": "N_AKSHARDHAM",
+      "to": "N_MAYUR_VIHAR",
+      "base_weight": 2.4,
+      "coords": [[77.2780, 28.6180], [77.2870, 28.6130], [77.2960, 28.6080]]
+    },
+    {
+      "id": "E_MAYUR_TO_AKSHARDHAM",
+      "from": "N_MAYUR_VIHAR",
+      "to": "N_AKSHARDHAM",
+      "base_weight": 2.4,
+      "coords": [[77.2960, 28.6080], [77.2870, 28.6130], [77.2780, 28.6180]]
+    },
+    {
+      "id": "E_MAYUR_TO_SECTOR_62",
+      "from": "N_MAYUR_VIHAR",
+      "to": "N_SECTOR_62",
+      "base_weight": 7.5,
+      "coords": [[77.2960, 28.6080], [77.3300, 28.6180], [77.3640, 28.6280]]
+    },
+    {
+      "id": "E_SECTOR_62_TO_MAYUR",
+      "from": "N_SECTOR_62",
+      "to": "N_MAYUR_VIHAR",
+      "base_weight": 7.5,
+      "coords": [[77.3640, 28.6280], [77.3300, 28.6180], [77.2960, 28.6080]]
+    },
+    {
+      "id": "E_SECTOR_62_TO_SECTOR_5",
+      "from": "N_SECTOR_62",
+      "to": "N_SECTOR_5",
+      "base_weight": 3.2,
+      "coords": [[77.3640, 28.6280], [77.3700, 28.6140], [77.3750, 28.6010]]
+    },
+    {
+      "id": "E_SECTOR_5_TO_SECTOR_62",
+      "from": "N_SECTOR_5",
+      "to": "N_SECTOR_62",
+      "base_weight": 3.2,
+      "coords": [[77.3750, 28.6010], [77.3700, 28.6140], [77.3640, 28.6280]]
+    },
+    {
+      "id": "E_MAYUR_TO_SARITA",
+      "from": "N_MAYUR_VIHAR",
+      "to": "N_SARITA_VIHAR",
+      "base_weight": 8.9,
+      "coords": [[77.2960, 28.6080], [77.2970, 28.5680], [77.2980, 28.5280]]
+    },
+    {
+      "id": "E_SARITA_TO_OKHLA",
+      "from": "N_SARITA_VIHAR",
+      "to": "N_OKHLA_BARRAGE",
+      "base_weight": 2.7,
+      "coords": [[77.2980, 28.5280], [77.2850, 28.5310], [77.2730, 28.5350]]
+    },
+    {
+      "id": "E_OKHLA_TO_SARITA",
+      "from": "N_OKHLA_BARRAGE",
+      "to": "N_SARITA_VIHAR",
+      "base_weight": 2.7,
+      "coords": [[77.2730, 28.5350], [77.2850, 28.5310], [77.2980, 28.5280]]
+    },
+    {
+      "id": "E_KHADAR_TO_AKSHARDHAM",
+      "from": "N_YAMUNA_KHADAR",
+      "to": "N_AKSHARDHAM",
+      "base_weight": 3.5,
+      "coords": [[77.2620, 28.6430], [77.2700, 28.6300], [77.2780, 28.6180]]
+    },
+    {
+      "id": "E_AKSHARDHAM_TO_KHADAR",
+      "from": "N_AKSHARDHAM",
+      "to": "N_YAMUNA_KHADAR",
+      "base_weight": 3.5,
+      "coords": [[77.2780, 28.6180], [77.2700, 28.6300], [77.2620, 28.6430]]
+    }
+  ]
+}
+

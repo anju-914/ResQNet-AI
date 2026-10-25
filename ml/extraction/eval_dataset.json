@@ -1,0 +1,333 @@
+[
+  {
+    "id": 1,
+    "text": "paani bhar gaya hai near sector 5, 5 log chhat par hain please madad karo",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 5,
+      "location_text": "Sector 5",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 2,
+    "text": "यमुना खादर में पानी भर चुका है, 12 लोग फंसे हैं, नाव भेजो",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 12,
+      "location_text": "यमुना खादर",
+      "language": "Hindi",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 3,
+    "text": "Urgent medical assistance required at Kashmere Gate ISBT, an elderly woman is bleeding",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": 1,
+      "location_text": "Kashmere Gate",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 4,
+    "text": "chhat par paani aa raha hai, bache bhookhe hain ration chahiye at Mayur Vihar",
+    "expected": {
+      "need_type": "Food",
+      "people_count": null,
+      "location_text": "Mayur Vihar",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 5,
+    "text": "Testing 123 hello world system check",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": null,
+      "language": "English",
+      "is_spam": true
+    }
+  },
+  {
+    "id": 6,
+    "text": "Laxmi Nagar Vikas Marg par paani 4 feet ho gaya hai, 3 log car me phase hain",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 3,
+      "location_text": "Laxmi Nagar",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 7,
+    "text": "सिविल लाइंस में 8 लोग छत पर फंसे हैं, तुरंत दवा और खाना चाहिए",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": 8,
+      "location_text": "सिविल लाइंस",
+      "language": "Hindi",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 8,
+    "text": "Win free recharge click here promo offer",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": null,
+      "language": "English",
+      "is_spam": true
+    }
+  },
+  {
+    "id": 9,
+    "text": "Drinking water needed urgently near Akshardham flyover for 20 stranded commuters",
+    "expected": {
+      "need_type": "Water",
+      "people_count": 20,
+      "location_text": "Akshardham",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 10,
+    "text": "shastri park metro ke paas boat chahiye, do family phase hue hain",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": "Shastri Park",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 11,
+    "text": "Okhla Barrage area submerged, 15 workers trapped in godown",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 15,
+      "location_text": "Okhla",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 12,
+    "text": "madad karo bhai sector 62 me light nahi hai aur paani ghar me ghus gaya hai",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": "Sector 62",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 13,
+    "text": "sarita vihar ke paas pregnant woman needs emergency doctor immediately",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": 1,
+      "location_text": "Sarita Vihar",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 14,
+    "text": "ito ring road is completely flooded, 4 cars submerged",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 4,
+      "location_text": "Ito",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 15,
+    "text": "test ignore",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": null,
+      "language": "English",
+      "is_spam": true
+    }
+  },
+  {
+    "id": 16,
+    "text": "यमुना बाजार घाट पर ५ लोग डूब रहे हैं, जल्दी बचाओ",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 5,
+      "location_text": "Yamuna Bazaar",
+      "language": "Hindi",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 17,
+    "text": "Civil Lines bungalow number 12, water level 5ft, family of 6 stranded on terrace",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 6,
+      "location_text": "Civil Lines",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 18,
+    "text": "dawai chahiye insulin for diabetic patient near Shastri Park",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": null,
+      "location_text": "Shastri Park",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 19,
+    "text": "100 food packets and clean drinking water needed at Yamuna Khadar shelter camp",
+    "expected": {
+      "need_type": "Food",
+      "people_count": null,
+      "location_text": "Yamuna Khadar",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 20,
+    "text": "sector 14 ground floor flooded 2 elderly people trapped inside",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 2,
+      "location_text": "Sector 14",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 21,
+    "text": "bhookh lagi hai chhat par 4 bache ro rahe hain near sector 5",
+    "expected": {
+      "need_type": "Food",
+      "people_count": 4,
+      "location_text": "Sector 5",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 22,
+    "text": "Just checking the helpline number",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": null,
+      "language": "English",
+      "is_spam": true
+    }
+  },
+  {
+    "id": 23,
+    "text": "Rohini Sector 3 ke pass naale ka paani overflow ho gaya, 7 log phase hain",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 7,
+      "location_text": "Rohini Sector 3",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 24,
+    "text": "Dwarka Sector 10 basement gym collapsed with 10 people inside",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 10,
+      "location_text": "Dwarka Sector 10",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 25,
+    "text": "कश्मीरी गेट बस अड्डे पर 25 यात्री फंसे हैं, भोजन और पानी की आवश्यकता है",
+    "expected": {
+      "need_type": "Food",
+      "people_count": 25,
+      "location_text": "कश्मीरी गेट",
+      "language": "Hindi",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 26,
+    "text": "Ambulance needed urgently at Boat Club, heart attack patient",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": 1,
+      "location_text": "Boat Club",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 27,
+    "text": "Narela industrial area shed collapsed, 9 laborers injured",
+    "expected": {
+      "need_type": "Medical",
+      "people_count": 9,
+      "location_text": "Narela",
+      "language": "English",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 28,
+    "text": "paani bahut tez badh raha hai mayur vihar flyover ke neeche, rescue team bhej do",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": "Mayur Vihar",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  },
+  {
+    "id": 29,
+    "text": "Free trial demo message do not respond",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": null,
+      "location_text": null,
+      "language": "English",
+      "is_spam": true
+    }
+  },
+  {
+    "id": 30,
+    "text": "Laxmi Nagar market me 14 log terrace par hain, boat rescue required immediately",
+    "expected": {
+      "need_type": "Rescue",
+      "people_count": 14,
+      "location_text": "Laxmi Nagar",
+      "language": "Hinglish",
+      "is_spam": false
+    }
+  }
+]
+
